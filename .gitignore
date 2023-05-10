@@ -1,0 +1,8 @@
+# input files
+*.mp3
+*.wav
+# environment files
+*env/
+# dependency's build files
+*build/
+
