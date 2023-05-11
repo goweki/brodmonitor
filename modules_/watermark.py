@@ -3,8 +3,7 @@ from scipy.io import wavfile
 from scipy.signal import windows
 import pywt
 
-AUDIO_INPUT = "audio.wav"  # Watermark destination file
-AUDIO_WATERMARKED = "wmed_signal.wav"  # Files with embedded watermarks
+  # Files with embedded watermark
 PSEUDO_RAND_FILE = "pseudo_rand.dat"  # file of pseudo-random number sequences
 WATERMARK_ORIGINAL_FILE = "watermark_ori.dat"  # watermark signal
 
@@ -34,7 +33,8 @@ def fix(xs):
     return res
 
 
-def embed():
+def embed(AUDIO_INPUT = "audio.wav"):
+    AUDIO_WATERMARKED = "wm-"+AUDIO_INPUT
     """
     perform embedding.
     """
